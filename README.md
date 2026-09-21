@@ -1,6 +1,8 @@
-# Arian Urdu - personal research website
+# Research portfolio template
 
-A small, static personal website for Arian Urdu. It uses plain HTML, CSS, and JavaScript so it can be hosted directly with GitHub Pages.
+A small static website layout for a personal research portfolio. It uses plain HTML, CSS, and JavaScript.
+
+The repository is private and GitHub Pages is disabled until the content is ready.
 
 ## Local preview
 
@@ -9,9 +11,3 @@ python3 -m http.server 8000
 ```
 
 Then open <http://localhost:8000>.
-
-## Deployment
-
-The site is intended for the `Arian-Urdu/arian-urdu.github.io` repository and the user site URL:
-
-<https://arian-urdu.github.io/>
