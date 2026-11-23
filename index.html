@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Arian Urdu</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
   <meta name="description" content="Arian Urdu - machine learning researcher working on world models and reinforcement learning for long-horizon planning in games.">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -52,6 +53,7 @@
     .pills a:hover, .pills button:hover { color: #222; border-color: #aaa; text-decoration: none; }
     .pills svg { width: 16px; height: 16px; fill: currentColor; }
     .pills.sm { gap: 6px; margin-top: 10px; }
+    .hero .pills { display: grid; grid-template-columns: repeat(3, max-content); justify-items: start; }
     .pills.sm a, .pills.sm button { padding: 1px 10px; font-size: 0.78rem; }
 
     /* Research */
@@ -103,8 +105,10 @@
     footer { margin-top: 36px; padding: 24px 0 32px; border-top: 1px solid #eee; font-size: 0.85rem; color: #aaa; text-align: center; }
 
     @media (max-width: 600px) {
-      body { padding-top: 32px; }
+      body { padding: 32px 20px 0; }
       h1 { font-size: 1.6rem; }
+      .hero .pills { gap: 6px; }
+      .hero .pills a { padding: 4px 8px; font-size: 0.85rem; }
       .avatar { width: 112px; height: 112px; margin-left: 16px; }
       .paper { grid-template-columns: 96px minmax(0, 1fr); gap: 12px; }
       .thumb { height: 72px; }
@@ -139,12 +143,12 @@
         <div class="thumb gga"><img src="assets/gga-icon.png" alt="GG Agents"></div>
         <div>
           <span class="tag gga">Benchmark · 2026</span>
-          <h3><a href="https://generalistgaming.org/">Evaluating Real-Time Generalist Gaming Agents Across a Massive Number of Games</a></h3>
+          <h3><a target="_blank" rel="noopener" href="https://generalistgaming.org/">Evaluating Real-Time Generalist Gaming Agents Across a Massive Number of Games</a></h3>
           <p class="authors">Benedikt Schink*, Matin Urdu*, <strong>Arian Urdu*</strong>, Wayne Chi, Stephanie Milani, Chengshuai Shi, Fei Fang, Chi Jin, Karthik Narasimhan, Kiran Vodrahalli, Seth Karten <span>(*equal contribution)</span></p>
           <p class="summary">Real-time benchmark of 32 browser games, with a $50K Kaggle competition.</p>
           <nav class="pills sm">
-            <a href="https://generalistgaming.org/">Website</a>
-            <a href="https://www.kaggle.com/competitions/generalist-gaming-agent">Kaggle</a>
+            <a target="_blank" rel="noopener" href="https://generalistgaming.org/">Website</a>
+            <a target="_blank" rel="noopener" href="https://www.kaggle.com/competitions/generalist-gaming-agent">Kaggle</a>
             <button type="button" onclick="document.getElementById('bib-gga').toggleAttribute('hidden')">BibTeX</button>
           </nav>
           <pre id="bib-gga" hidden>@misc{schink2026ggagents,
@@ -167,12 +171,12 @@
         </div>
         <div>
           <span class="tag">Competition · 2nd Place</span>
-          <h3><a href="https://www.inf.uni-hamburg.de/en/inst/basecamp/blog/25-12-07-pokerunners.html">Hamburg Pokérunners: Speedrunning Pokémon Emerald with Reinforcement Learning</a></h3>
+          <h3><a target="_blank" rel="noopener" href="https://www.inf.uni-hamburg.de/en/inst/basecamp/blog/25-12-07-pokerunners.html">Hamburg Pokérunners: Speedrunning Pokémon Emerald with Reinforcement Learning</a></h3>
           <p class="authors"><strong>Arian Urdu</strong>, Benedikt Schink, Matin Urdu</p>
           <p class="summary">PokéAgent Challenge, Track 2. Lightning talk at NeurIPS 2025.</p>
           <nav class="pills sm">
-            <a href="https://pokeagent.github.io">Challenge</a>
-            <a href="https://www.inf.uni-hamburg.de/en/inst/basecamp/blog/25-12-07-pokerunners.html">Blog post</a>
+            <a target="_blank" rel="noopener" href="https://pokeagent.github.io">Challenge</a>
+            <a target="_blank" rel="noopener" href="https://www.inf.uni-hamburg.de/en/inst/basecamp/blog/25-12-07-pokerunners.html">Blog post</a>
           </nav>
         </div>
       </article>
