@@ -5,7 +5,113 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Arian Urdu</title>
   <meta name="description" content="Arian Urdu - machine learning researcher working on world models and reinforcement learning for long-horizon planning in games.">
-  <link rel="stylesheet" href="style.css">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 48px 24px 0;
+      font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: #222;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: #0066cc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    img { display: block; }
+
+    h1 { font-size: 2rem; line-height: 1.2; letter-spacing: -0.5px; }
+    h2 { margin: 32px 0 16px; padding-bottom: 6px; border-bottom: 2px solid #eee; font-size: 1.25rem; letter-spacing: -0.3px; }
+    h3 { font-size: 1rem; font-weight: 600; line-height: 1.4; }
+
+    /* Hero */
+    .hero { display: flow-root; }
+    .avatar { float: right; width: 176px; height: 176px; margin: 0 0 12px 24px; border-radius: 12px; object-fit: cover; }
+    .tagline { margin: 4px 0 14px; font-size: 1.05rem; color: #555; }
+    .bio { margin-bottom: 14px; color: #333; }
+
+    /* Link buttons */
+    .pills { display: flex; flex-wrap: wrap; gap: 8px; }
+
+    .pills a, .pills button {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 12px;
+      border: 1px solid #ddd;
+      border-radius: 999px;
+      background: none;
+      font: inherit;
+      font-size: 0.9rem;
+      color: #555;
+      cursor: pointer;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .pills a:hover, .pills button:hover { color: #222; border-color: #aaa; text-decoration: none; }
+    .pills svg { width: 16px; height: 16px; fill: currentColor; }
+    .pills.sm { gap: 6px; margin-top: 10px; }
+    .pills.sm a, .pills.sm button { padding: 1px 10px; font-size: 0.78rem; }
+
+    /* Research */
+    .papers { display: grid; gap: 14px; }
+    .paper { display: grid; grid-template-columns: 128px minmax(0, 1fr); gap: 16px; padding: 14px; border: 1px solid #e8e8e8; border-radius: 8px; }
+
+    .thumb { position: relative; height: 96px; border-radius: 6px; overflow: hidden; }
+    .thumb > img { width: 100%; height: 100%; object-fit: cover; }
+    .thumb.gga { background: #c7f560; }
+    .thumb.gga > img { object-fit: contain; }
+
+    .badge {
+      position: absolute;
+      left: 5px;
+      bottom: 5px;
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      padding: 1px 6px 1px 4px;
+      border-radius: 4px;
+      background: #fffffff0;
+      font-size: 0.66rem;
+      font-weight: 600;
+      color: #323539;
+      white-space: nowrap;
+    }
+
+    .badge img { width: 12px; height: 12px; }
+
+    .tag { display: inline-block; margin-bottom: 4px; padding: 1px 7px; border-radius: 4px; background: #fdf0ee; font-size: 0.75rem; font-weight: 600; color: #c0392b; }
+    .tag.gga { background: #eefbd2; color: #4c6b12; }
+
+    .authors { margin-top: 3px; font-size: 0.82rem; line-height: 1.5; color: #666; }
+    .authors strong { color: #222; }
+    .authors span { color: #999; }
+    .summary { margin-top: 6px; font-size: 0.88rem; line-height: 1.5; color: #555; }
+    pre { margin-top: 10px; padding: 10px 12px; border-radius: 6px; background: #f7f7f7; font-size: 0.72rem; overflow-x: auto; }
+
+    /* Timeline */
+    .entry { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
+    .entry > img { flex: none; width: 40px; height: 40px; object-fit: contain; }
+    .entry > img.sm { width: 34px; height: 34px; margin: 0 3px; }
+    .entry time { display: block; font-size: 0.82rem; color: #888; }
+    .entry p { font-size: 0.86rem; line-height: 1.5; color: #666; }
+    .entry .org { font-size: 0.92rem; line-height: 1.6; color: #555; }
+
+    hr { margin: 18px 0; border: 0; border-top: 1px solid #eee; }
+
+    footer { margin-top: 36px; padding: 24px 0 32px; border-top: 1px solid #eee; font-size: 0.85rem; color: #aaa; text-align: center; }
+
+    @media (max-width: 600px) {
+      body { padding-top: 32px; }
+      h1 { font-size: 1.6rem; }
+      .avatar { width: 112px; height: 112px; margin-left: 16px; }
+      .paper { grid-template-columns: 96px minmax(0, 1fr); gap: 12px; }
+      .thumb { height: 72px; }
+      .badge { left: 3px; bottom: 3px; padding: 0 4px 0 3px; font-size: 0.56rem; }
+      .badge img { width: 10px; height: 10px; }
+    }
+  </style>
 </head>
 <body>
   <main>
