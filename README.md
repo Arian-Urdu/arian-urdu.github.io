@@ -1,6 +1,6 @@
 # Arian Urdu
 
-Personal academic website. Plain HTML and CSS, no build step.
+Personal academic website, live at https://arian-urdu.github.io. Plain HTML and CSS, no build step.
 
 - `index.html` - content
 - `style.css` - styles
